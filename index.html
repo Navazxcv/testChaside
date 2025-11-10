@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resultados Test CHASIDE - PUCE</title>
+
+<!-- Fuente Aptos (Microsoft Font Family) -->
+<style>
+  @font-face {
+    font-family: 'Aptos';
+    src: local('Aptos'), local('Aptos Regular');
+  }
+
+  body {
+    font-family: 'Aptos', 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f6fb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+
+  .header {
+    text-align: center;
+    background: linear-gradient(135deg, #004aad, #007bff);
+    color: white;
+    padding: 30px 0px;
+  }
+
+  .header h1 {
+    padding: 10px 0px 1px 0px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .header p {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .header img {
+    padding: 5px 0px 5px 0px;
+  }
+
+  .section {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .section h2 {
+    color: #004aad;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+    .score-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* 🔥 hace que todos tengan la misma altura */
+    gap: 12px;
+    }
+
+    .score {
+    background: #f0f4ff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    flex: 1 1 auto; /* 🔥 todos crecen igual según el más ancho */
+    max-width: 250px;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .score h3 {
+    margin: 5px 0;
+    color: #004aad;
+    font-size: 14px;
+    font-weight: 600;
+    word-wrap: break-word;
+    }
+
+    .score p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    }
+
+  /* --- FIN DEL CAMBIO --- */
+
+  .recommendation {
+    background-color: #eaf1ff;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .recommendation h3 {
+    font-weight: 600;
+    color: #004aad;
+  }
+
+  .recommendation p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+    .career-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 2 columnas por fila */
+    gap: 12px;
+    justify-items: center; /* centra cuando hay una sola en la fila */
+    margin-top: 20px;
+    }
+
+    .career-buttons a {
+    display: flex;
+    flex-direction: column; /* texto arriba, imagen abajo */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100px; /* tamaño máximo de cada botón */
+    background: #004aad;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.2s;
+    }
+
+    .career-buttons a:hover {
+    background: #007bff;
+    transform: translateY(-3px);
+    }
+
+    .career-buttons a img {
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+    border-radius: 8px;
+    object-fit: cover;
+    }
+
+    /* 🌐 Responsividad: en pantallas pequeñas, 1 columna */
+    @media (max-width: 500px) {
+    .career-buttons {
+        grid-template-columns: 1fr; /* una por fila */
+    }
+
+    .career-buttons a {
+        max-width: 40%; /* que el botón ocupe todo el ancho disponible */
+    }
+    }
+
+  .career-image {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  .footer {
+    background: #004aad;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .profile {
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .profile img {
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .profile h4 {
+    margin: 10px 0 5px 0;
+    color: #004aad;
+    font-weight: 600;
+  }
+
+  .profile p {
+    margin: 0;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+    <img src="https://github.com/Navazxcv/ImagesMailCHASIDE/raw/main/PUCE-Largo-BLANCO-H.png" alt="PUCE" width="350">
+    <h1>Resultados del Test CHASIDE</h1>
+    <p>Facultad de Salud y Bienestar - PUCE</p>
+  </div>
+
+  <div class="section">
+    <h2>¡Bienvenid@, <strong>Nombre del Estudiante</strong>!</h2>
+    <p>Según las respuestas en el Test de Vocación Profesional, tus principales áreas de interés son:</p>
+
+    <div class="score-box">
+      <div class="score">
+        <h3>C - </h3>
+        <p>10</p>
+      </div>
+      <div class="score">
+        <h3>S - </h3>
+        <p>8</p>
+      </div>
+      <div class="score">
+        <h3>E - </h3>
+        <p>7</p>
+      </div>
+      <div class="score">
+        <h3>I - </h3>
+        <p>9</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="recommendation">
+    <h3>Considerando que tu Perfil Profesional, incluye el Área de Medicina y Ciencias de la Salud, la PUCE te recomienda las siguientes Carreras:</h3>
+    
+    <div class="career-buttons">
+        <a href="https://www.puce.edu.ec/carrera/psicologia/">
+            Enfermería
+            <img src="https://github.com/Navazxcv/ImagesMailCHASIDE/raw/main/cabecera-enfermeria.png" alt="Enfermería">
+        </a>
+
+        <a href="https://www.puce.edu.ec/carrera/terapia-ocupacional/">
+            Fisioterapia
+            <img src="https://github.com/Navazxcv/ImagesMailCHASIDE/raw/main/cabecera-fisioterapia.png" alt="Fisioterapia">
+        </a>
+
+        <a href="https://www.puce.edu.ec/carrera/comunicacion/">
+         Medicina   
+            <img src="https://github.com/Navazxcv/ImagesMailCHASIDE/raw/main/cabecera-medicina.png" alt="Medicina">
+        </a>
+
+        <a href="https://www.puce.edu.ec/carrera/educacion/">
+         Nutrición y Dietética   
+            <img src="https://github.com/Navazxcv/ImagesMailCHASIDE/raw/main/cabecera-nutricion-y-dietetica.png" alt="Nutrición y Dietética">
+        </a>
+    </div>
+
+    
+    <img src="https://github.com/Navazxcv/ImagesMailCHASIDE/raw/main/puce-quito-ecuador.jpg" alt="PUCE Campus" class="career-image">
+
+    
+  </div>
+
+  <div class="profile">
+    <h4>Promoción FASABI</h4>
+    <p>Facultad de Salud y Bienestar - PUCE</p>
+  </div>
+
+  <div class="footer">
+    © 2025 Pontificia Universidad Católica del Ecuador<br>
+    Quito - Ecuador
+  </div>
+</div>
+
+</body>
+</html>
